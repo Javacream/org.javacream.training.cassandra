@@ -1,0 +1,12 @@
+Docker + Cassandra Docker installieren auf Linux-Maschine
+
+Auf anderer Linux-Maschine pip installieren + python cassandra-driver
+
+sudo apt install python-pip
+sudo pip install cassandra-driver
+export CQLSH_NO_BUNDLED=true
+
+Unter Windows: 
+
+Installation vo  Python 2.7
+Aufnahme des PATH, dann sollte es gehen
