@@ -1,6 +1,5 @@
-sudo docker run --name cassandra -d cassandra
-sudo docker start cassandra
-sudo docker exec -it cassandra bash
+sudo docker run --rm --name cassandra -p 9042:9042 -d cassandra
+sudo docker exec -it cassandra /bin/bash
 
 
 https://cassandra.apache.org/doc/cql3/CQL-3.2.html
