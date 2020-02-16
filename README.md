@@ -6,9 +6,10 @@ see <https://hub.docker.com/_/cassandra/>
 
 Start the cassandra server using 
 
-docker run --name cassandra_server -d cassandra
+docker run --name cassandra -p 9042:9042 cassandra:3
 
-Connect with cqlsh using
+Connect with running container
 
-docker run -it --link cassandra_server:cassandra --rm cassandra cqlsh cassandra
+docker exec -it cassandra /bin/bash
 
+start shell using cqlsh
