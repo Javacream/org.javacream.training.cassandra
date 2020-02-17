@@ -14,7 +14,7 @@ public class BasicCrudApplication {
 
 	private void execute() {
 		try {
-			cluster = Cluster.builder().addContactPoint("127.0.0.1").build();
+			cluster = Cluster.builder().addContactPoint("localhost").build();
 			session = cluster.connect();
 			createAndUseKeyspace();
 			createTables();
