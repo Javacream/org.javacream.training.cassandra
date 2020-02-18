@@ -5,3 +5,8 @@ create keyspace training WITH replication = {'class': 'SimpleStrategy', 'replica
 use training;
 
 create table publisher (name text, city text, primary key(name));  
+
+create table publisher_with_books (name text, city text static, isbn text, title text, primary key
+(name, isbn));
+
+insert into publisher_with_books (name, city, isbn, title) values ('Springer', 'Hamburg', 'ISBN1', 'Cassandra in Action');
