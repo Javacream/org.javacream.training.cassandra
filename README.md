@@ -1,15 +1,21 @@
-# Cassandra Training Project
+# Cassandra Training
 
-## Setup using docker
+## Durchführung des Seminars
 
-see <https://hub.docker.com/_/cassandra/>
+* Referent: Rainer Sawitzki, eMail: training@rainer-sawitzki.de
 
-Start the cassandra server using 
+* Beispiele
 
-docker run --name cassandra -p 9042:9042 cassandra:3
+  * https://github.com/Javacream/org.javacream.training.cassandra
+    *  integrata_17.1.2022
+* Digitales Flipchart
 
-Connect with running container
+  * https://docs.google.com/presentation/d/1LYw1Zdq9oDBN4KRyalEg6UYTcf5EplszTMfoqm1nDXE/edit?usp=sharing
 
-docker exec -it cassandra /bin/bash
+## Zeitplan
 
-start shell using cqlsh
+* Montag 9:00 - 17:00
+* Dienstag 8:30 - 17:00
+* Mittwoch 8:30 - 12:45
+* Kaffeepausen 10:30 - 10:45 und 15:00 - 15:15
+* Mittagspause 12:15 - 13:00
