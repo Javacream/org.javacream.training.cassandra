@@ -16,3 +16,8 @@
   - geht nicht
 - delete from messages where message = 'Hello';
 
+## Aufräumen
+
+- drop table messages;
+- drop keyspace test_sawitzki;
+
