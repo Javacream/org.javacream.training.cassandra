@@ -1,0 +1,10 @@
+{
+    "cql.address": "h2908727.stratoserver.net",
+    "cassandraWorkbench.activeClusterName": "Cluster AllowAllAuthenticator",
+    "cassandraWorkbench.activeKeyspace": [
+        [
+            "Cluster AllowAllAuthenticator",
+            "training_sawitzki"
+        ]
+    ]
+}

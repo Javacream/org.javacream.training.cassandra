@@ -1,0 +1,17 @@
+[
+    // AllowAllAuthenticator
+    {
+        "name": "Cluster AllowAllAuthenticator",
+        "contactPoints": ["h2908727.stratoserver.net"]
+    },
+    //PasswordAuthenticator
+    {
+        "name": "Cluster PasswordAuthenticator",
+        "contactPoints": ["h2908727.stratoserver.net"],
+        "authProvider": {
+            "class": "PasswordAuthenticator",
+            "username": "yourUsername",
+            "password": "yourPassword"
+        }
+    }
+]
