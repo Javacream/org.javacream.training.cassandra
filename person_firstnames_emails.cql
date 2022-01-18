@@ -6,4 +6,7 @@
 //update person set firstnames={'Ulrich'}  where lastname = 'Sawitzki' and id = 57af9b5a-5b24-4fed-aab0-c19c51eb8935 ;
 //select * from person where lastname = 'Sawitzki' and firstnames contains 'Ulrich' ALLOW FILTERING;
 //create index on person(firstnames);
-select * from person where lastname = 'Sawitzki' and firstnames contains 'Ulrich';
+//select * from person where lastname = 'Sawitzki' and firstnames contains 'Ulrich';
+//update person set firstnames= firstnames + {'Hugo'}  where lastname = 'Sawitzki' and id = 57af9b5a-5b24-4fed-aab0-c19c51eb8935;
+//update person set emails= ['a@b.de', 'z@e.de']  where lastname = 'Sawitzki' and id = 57af9b5a-5b24-4fed-aab0-c19c51eb8935;
+//select emails from person where lastname = 'Sawitzki' and id = 57af9b5a-5b24-4fed-aab0-c19c51eb8935;

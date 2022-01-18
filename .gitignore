@@ -1,3 +1,5 @@
+.cassandraWorkbench/
+.vscode/
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -10,3 +12,7 @@ buildNumber.properties
 
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar
+.cassandraWorkbench/history.json
+.cassandraWorkbench/editors/0.json
+.cassandraWorkbench/editors/1.json
+.vscode/settings.json
