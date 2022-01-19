@@ -4,7 +4,8 @@ import com.datastax.driver.core.Cluster;
 import com.datastax.driver.core.Session;
 
 public class BasicCrudApplication {
-
+	//public static final String HOST = "localhost";
+	public static final String HOST = "h2908727.stratoserver.net";
 	public static void main(String[] args) {
 		new BasicCrudApplication().execute();
 	}
@@ -14,7 +15,7 @@ public class BasicCrudApplication {
 
 	private void execute() {
 		try {
-			cluster = Cluster.builder().addContactPoint("localhost").build();
+			cluster = Cluster.builder().addContactPoint(HOST).build();
 			session = cluster.connect();
 			createAndUseKeyspace();
 			createTables();
