@@ -1,0 +1,39 @@
+version: '2'
+services:
+  cassandra1:
+    image: javacream/cassandra
+    ports:
+      - "8000:9192"
+      - "9042:9042"
+    environment:
+      - CASSANDRA_CLUSTER_NAME=javacream_cluster
+      - HEAP_NEWSIZE=1M
+      - MAX_HEAP_SIZE=1024M
+
+  cassandra2:
+    image: javacream/cassandra
+    environment:
+      - CASSANDRA_SEEDS=cassandra1
+      - CASSANDRA_CLUSTER_NAME=javacream_cluster
+      - HEAP_NEWSIZE=1M
+      - MAX_HEAP_SIZE=1024M
+
+    ports:
+      - "8001:9192"
+      - "9043:9042"
+  cassandra3:
+    image: javacream/cassandra
+    environment:
+      - CASSANDRA_SEEDS=cassandra1
+      - CASSANDRA_CLUSTER_NAME=javacream_cluster
+      - HEAP_NEWSIZE=1M
+      - MAX_HEAP_SIZE=1024M
+    ports:
+      - "8002:9192"
+      - "9044:9042"
+      
+ hawtio:
+    image: javacream/hawtio:1.0
+    ports:
+      - 8080:8080
+
