@@ -19,5 +19,6 @@ public class PublishingApplication {
 		publishingRepository.save(cassandraInAction3);
 		Book java = new Book("Manning", 5000, 9.99, "ISBN-4", true, "Java");
 		publishingRepository.save(java);
+		System.out.println(publishingRepository.findAll());
 	}
 }
