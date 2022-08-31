@@ -7,15 +7,16 @@
 * Beispiele
 
   * https://github.com/Javacream/org.javacream.training.cassandra
-    *  integrata_17.1.2022
+    *  sipgate_1.9.2022
 * Digitales Flipchart
 
-  * https://docs.google.com/presentation/d/1LYw1Zdq9oDBN4KRyalEg6UYTcf5EplszTMfoqm1nDXE/edit?usp=sharing
+  * https://docs.google.com/presentation/d/1inJfxf59JSdW3KQ4T8RZuiWodgYgR42_M_Hb0u7us9s/edit?usp=sharing
 
 ## Zeitplan
 
-* Montag 9:00 - 17:00
-* Dienstag 8:30 - 17:00
-* Mittwoch 8:30 - 12:45
-* Kaffeepausen 10:30 - 10:45 und 15:00 - 15:15
+* 12 Unterrichtseinheiten mit jeweils 90 Minuten
+* Donnerstag 9:00 - 16:15
+* Freitag 8:00 - 15:00
+* Montag 8:00 - 15:00
+* Kaffeepausen 10:30 - 10:45 und Donnerstag 15:00 - 15:15 
 * Mittagspause 12:15 - 13:00
