@@ -1,1 +1,1 @@
-create keyspace training WITH replication {'class': 'SimpleStrategy', 'replication_factor': 1}
+create keyspace training WITH replication={'class': 'SimpleStrategy', 'replication_factor': 1}
