@@ -3,3 +3,7 @@ create keyspace training WITH replication={'class': 'SimpleStrategy', 'replicati
 use training;
 
 create table publisher (name text, city text, primary key(name));
+
+insert into publisher (name, city) values('Springer', 'Berlin');
+
+select * from publisher;
