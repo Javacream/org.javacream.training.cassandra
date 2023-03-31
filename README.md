@@ -13,4 +13,4 @@
   * Donnerstag/Freitag
   * 8:30 - 15:30
   * Kaffeepausen 10:00 - 10:15
-  * Mittagspause 45’ 12:00-12:45
+  * Mittagspause 45’ 11:45-12:45
