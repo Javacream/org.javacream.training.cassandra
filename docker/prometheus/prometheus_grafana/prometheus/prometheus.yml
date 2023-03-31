@@ -1,0 +1,25 @@
+global:
+  scrape_interval:     15s 
+
+scrape_configs:
+
+  - job_name: 'prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'cassandra1'
+    static_configs:
+      - targets: ['10.160.1.14:8000']
+  - job_name: 'cassandrai2'
+    static_configs:
+      - targets: ['10.160.1.14:8001']
+  - job_name: 'cassandra3'
+    static_configs:
+      - targets: ['10.160.1.14:8002']
+
+  - job_name: 'pushgateway'
+    honor_labels: true
+    static_configs:
+      - targets: ['pushgateway:9091']
+
