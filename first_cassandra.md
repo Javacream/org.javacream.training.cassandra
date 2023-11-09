@@ -14,4 +14,4 @@ create table first (message text, primary key(message));
 
 insert into first (message) values('Hello');
 
-select * from messages;
+select message from first;
