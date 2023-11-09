@@ -4,4 +4,4 @@ create keyspace training with replication={'class': 'SimpleStrategy', 'replicati
 
 ## Anlegen eines Datencontainers
 
-create table first (message text, primary key(message);
+create table first (message text, primary key(message));
