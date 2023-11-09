@@ -15,3 +15,8 @@ create table first (message text, primary key(message));
 insert into first (message) values('Hello');
 
 select message from first;
+
+## Aufräumen
+
+drop table first;
+drop keyspace training;
