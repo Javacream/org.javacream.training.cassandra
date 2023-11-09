@@ -9,3 +9,9 @@ use training;
 ## Anlegen eines Datencontainers
 
 create table first (message text, primary key(message));
+
+## Anlegen eines Datensatzes
+
+insert into first (message) values('Hello');
+
+select * from messages;
