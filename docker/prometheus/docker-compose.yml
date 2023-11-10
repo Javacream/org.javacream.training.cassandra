@@ -1,17 +1,18 @@
 version: '2'
 services:
   cassandra1:
-    image: javacream/cassandra:prometheus
+    image: javacream/cassandra:jolokia_prometheus
     ports:
       - "8000:7070"
       - "9042:9042"
+      - "9000:9192"
     environment:
       - CASSANDRA_CLUSTER_NAME=javacream_cluster
       - HEAP_NEWSIZE=1M
       - MAX_HEAP_SIZE=1024M
 
   cassandra2:
-    image: javacream/cassandra:prometheus
+    image: javacream/cassandra:jolokia_prometheus
     environment:
       - CASSANDRA_SEEDS=cassandra1
       - CASSANDRA_CLUSTER_NAME=javacream_cluster
@@ -20,8 +21,9 @@ services:
     ports:
       - "8001:7070"
       - "9043:9042"
+      - "9001:9192"
   cassandra3:
-    image: javacream/cassandra:prometheus
+    image: javacream/cassandra:jolokia_prometheus
     environment:
       - CASSANDRA_SEEDS=cassandra1
       - CASSANDRA_CLUSTER_NAME=javacream_cluster
@@ -30,3 +32,8 @@ services:
     ports:
       - "8002:7070"
       - "9044:9042"
+      - "9002:9192"
+  hawtio:
+    image: javacream/hawtio:1.0
+    ports:
+      - "8080:8080"

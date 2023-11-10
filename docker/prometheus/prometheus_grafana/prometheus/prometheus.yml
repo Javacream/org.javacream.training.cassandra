@@ -10,13 +10,13 @@ scrape_configs:
 
   - job_name: 'cassandra1'
     static_configs:
-      - targets: ['10.160.1.14:8000']
+      - targets: ['10.160.2.149:8000']
   - job_name: 'cassandrai2'
     static_configs:
-      - targets: ['10.160.1.14:8001']
+      - targets: ['10.160.2.149:8001']
   - job_name: 'cassandra3'
     static_configs:
-      - targets: ['10.160.1.14:8002']
+      - targets: ['10.160.2.149:8002']
 
   - job_name: 'pushgateway'
     honor_labels: true
